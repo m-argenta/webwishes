@@ -1,1 +1,1 @@
-#### [Wares](https://m-argenta.github.io/w/wares.html)
+[Wares](https://m-argenta.github.io/w/wares.html)
