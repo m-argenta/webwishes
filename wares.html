@@ -142,7 +142,13 @@ a {
 a:hover {
   color: #F5F5F5 !important;
   text-decoration: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
+}
+
+.smallBox input[type="text"] {
+  width: 25%;
+  min-width: 120px;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1" name="Welcome" tags="" position="2300,700" size="100,100">&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;set $welcomeCounter += 1&gt;&gt;
     &lt;&lt;if $playerStupid is true&gt;&gt;
@@ -300,8 +306,8 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
 Who are you?
 
 &gt;My name is...
-&gt;&lt;&lt;textbox &quot;$playerName&quot; &quot;&quot;&gt;&gt;
-&gt;[[That&#39;s me|introduction]]</tw-passagedata><tw-passagedata pid="13" name="socials" tags="" position="1400,575" size="100,100">Not really... Well, I do, but I&#39;m not posting anything at the moment. It&#39;s a weird vibe.
+&gt;@@.smallBox;&lt;&lt;textbox &quot;$playerName&quot; &quot;&quot; &quot;introduction&quot; autofocus&gt;&gt;
+[[That&#39;s me|introduction]]</tw-passagedata><tw-passagedata pid="13" name="socials" tags="" position="1400,575" size="100,100">Not really... Well, I do, but I&#39;m not posting anything at the moment. It&#39;s a weird vibe.
 
 &gt;&lt;a href=&quot;https://www.instagram.com/margenta_art/&quot; target=&quot;_blank&quot;&gt;I&#39;m going to follow you anyway!&lt;/a&gt;
 &gt;[[Where do you post stuff?|website]]</tw-passagedata><tw-passagedata pid="14" name="StoryInit" tags="" position="900,300" size="100,100">&lt;&lt;set $itemA to &quot;Nosy Frog Sticker&quot;&gt;&gt;
